@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+    padding: 0 30px;
+}
+
+.container {
+    position: relative;
+    max-width: 360px;
+    height: auto;
+}
+
+.card-one, .card-two {
+    width: 100%;
+    background-color: hsl(213, 19%, 18%);
+    padding: 28px;
+    border-radius: 20px;
+}
+
+.star-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #45474B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    margin: 35px 0 15px 0;
+}
+
+.para {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.4;
+}
+
+.card-one .ratings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 25px 0;
+}
+
+.ratings div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #45474B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(217, 12%, 63%);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ratings div:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+}
+
+.rating-active {
+    background-color: #fff !important;
+    color: hsl(216, 12%, 8%) !important;
+}
+
+.card-one .submit-btn {
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+    border: none;
+    padding: 10px 0;
+    font-weight: 550;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.card-one .submit-btn:hover {
+    background-color: #fff;
+}
+
+/* Thank you state start  */
+
+.card-two {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.card-active {
+    display: block;
+}
+
+.card-two h2 {
+    margin: 0 0 10px 0;
+}
+
+.card-two .rating-outcome {
+    background-color: #45474B;
+    display: inline-block;
+    color: hsl(25, 97%, 53%);
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin: 20px 0 25px 0;
+}
